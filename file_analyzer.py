@@ -86,7 +86,14 @@ def match_type(filepath):
     return return_data
 
 def main():
-    optparser = optparse.OptionParser("%prog [OPTIONS]\n\rThis script is used to analyse files for their extension changes.")
+    optparser = optparse.OptionParser("%prog [options].\n\rThis script is used to analyse files for their extension changes.\n\rCreated By\n\r"
+                        "     =====       //||        //||  //||\n\r"
+                        "    //          // ||       // || // ||\n\r"
+                        "   //          //  ||      //  ||//  ||\n\r"
+                        "   =====      //===||     //         ||\n\r"
+                        "       //    //    ||    //          ||\n\r"
+                        "      //    //     ||   //           ||\n\r"
+                        " =====     //      ||  //            ||")
     optparser.add_option("-f", "--file", dest="filename", type="string", help="File to analyse")
     (options, args) = optparser.parse_args()
 
